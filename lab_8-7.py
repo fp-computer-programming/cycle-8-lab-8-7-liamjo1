@@ -7,3 +7,20 @@ Using the nested list rows from the "Nested Data" slide, write a function that p
 BONUS: Make each name be possessive. Remember, if a name ends in s, only add an apostrophe. If the name does not end in s, add, 's.
 
 """
+# Liam O'Hara
+
+rows = [["Kyle", "James", "Albert"], ["Charles", "Francis"], ["Timmy", "Mike"]]
+
+for row in  rows:
+
+    for name in row:
+
+        namer = name[::-1]
+
+        if namer[0] == "s":
+
+            print (name,"s")
+
+        else:
+            
+            print (name,"'s")
